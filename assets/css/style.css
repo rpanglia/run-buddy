@@ -234,12 +234,12 @@ section {
 }
 
 .contact h2 {
-    color: #fce138
+    color: #fce138;
 }
 
 .contact-info iframe {
     width: 400px;
-    height: 400p;
+    height: 400px;
 }
 
 .contact-info div {
@@ -247,6 +247,24 @@ section {
     display: inline-block;
     vertical-align: top;
     text-align: left;
-    margin: 30p 0 0 60px;
+    margin: 30px 0 0 60px;
     color: white;
 }
+
+.contact-info h3 {
+    color: #fce138;
+    font-size: 32px;
+}
+
+.contact-info p, .contact-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.contact-info a {
+    color: #fce138;
+}
+
+/* REACH OUT STYLES END  my version*/
