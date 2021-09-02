@@ -5,12 +5,11 @@
 }
 
 body {
-    /* more on this crazy alphanumerical value in a minute! */
     color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
 }
 
-/* apply styles to <header> */
+
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
@@ -79,7 +78,6 @@ section {
     background-position: center;
     position: relative;
 }
-/* Hero Style End */
 
 .hero-form {
     border: 3px solid #024e76;
@@ -122,7 +120,7 @@ section {
     padding: 10px 20px;
     font-size: 16px;
 }
-
+/* Hero Style End */
 .intro {
     text-align: center;
 }
