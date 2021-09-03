@@ -1,7 +1,7 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -28,9 +28,9 @@ header {
 
 header h1 {
     font-weight: bold;
+    margin: 0;
     font-size: 36px;
     color: #fce138;
-    margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -52,7 +52,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    padding: 10p 15px;
+    padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -63,15 +63,19 @@ header nav ul li a:hover {
     color: #024e76;
     border-radius: 15px;
     text-shadow: none;
-  }
+}
+
+/* Header/navbar styles end*/
+
+/*Footer styles start*/
 
 footer {
     background: #fce138;
-    width: 100%;
     padding: 40px 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 footer h2 {
@@ -89,6 +93,10 @@ footer a {
     color: #024e76;
 }
 
+/*End footer styles*/
+
+/*style all section tags*/
+
 section {
     padding: 60px;
 }
@@ -104,7 +112,6 @@ section {
     flex-wrap: wrap;
     align-items: flex-start;
 }
-/* Hero Style End */
 
 .hero-cta {
     width: 35%;
@@ -125,12 +132,16 @@ section {
 .hero-form {
     border: 3px solid #024e76;
     border-radius: 15px;
-    background-color: #fce138;
-    box-shadow: 0 0 10px rgba(252, 225, 56, 0.8);
+    background-color: rgba(252, 225, 56, 0.8);
+    box-shadow: 0 0 10px rgba(252, 225, 56, 0.5);
     padding: 20px;
     color: #024e76;
     width: 40%;
     margin: 3.5%;
+}
+
+.hero-form button:hover {
+    background-color: #39a6b2;  
 }
 
 .hero-form h3 {
@@ -171,11 +182,30 @@ section {
     font-size: 16px;
     border-radius: 10px;
 }
+/* Hero styles end*/
 
-.hero-form button:hover {
-    background-color: #39a6b2;  
-  }
+/* Section title styles start */
+.section-title {
+    font-size: 48px;
+    color: #024e76;
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+}
 
+.primary-border {
+    border-color: #fce138;
+}
+
+.secondary-border {
+    border-color: #39a6b2;
+}
+/*end of section title styles*/
+
+
+/*start of What You Do styles*/
 .intro p {
     line-height: 1.7;
     color: #39a6b2;
@@ -183,6 +213,12 @@ section {
     font-size: 20px;
     margin: 0 auto;
     text-align: center;
+}
+/*End of WHat You Do styles*/
+
+/*start of what you do styles start*/
+.steps {
+    background: #fce138;
 }
 
 .step {
@@ -195,16 +231,16 @@ section {
     justify-content: space-between;
 }
 
+.step:last-child {
+    border-bottom: none;
+}
+
 .step:nth-child(even) {
     border-bottom: 1px solid #39a6b2;
 }
 
 .step:not(:last-child) {
     border-bottom: 1px solid #39a6b2;
-}
-
-.steps {
-    background: #fce138;
 }
 
 .step h3 {
@@ -243,25 +279,9 @@ section {
     line-height: 1.5;
     color: #024e76;
 }
+/* end of WHat you do styles*/
 
-.section-title {
-    font-size: 48px;
-    color: #024e76;
-    border-bottom: 3px solid;
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 50%;
-}
-
-.primary-border {
-    border-color: #fce138;
-}
-
-.secondary-border {
-    border-color: #39a6b2;
-}
-
+/*start of meet the trainers*/
 .trainers {
     width: 100%;
     margin: 0 auto;
@@ -299,14 +319,8 @@ section {
 .trainer-bio p {
     font-size: 17px;
 }
+/*end of trainer styles*/
 
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
-}
 
 /* REACH OUT STYLES START */
 .contact {
@@ -353,11 +367,9 @@ section {
     color: #fce138;
 }
 
-/*is the below supposed to be contact-form input, .contact-form text...*/
 .contact-form input,
 .contact-form textarea {
     border: 1px solid #024e76;
-    border-radius: 10px;
     display: block;
     padding: 7px 15px;
     font-size: 16px;
@@ -365,6 +377,7 @@ section {
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
+    border-radius: 10px;
     background-color: rgba(255,255,255, 0.75);
 }
 
@@ -376,29 +389,34 @@ section {
 .contact-form button {
     width: 100%;
     border: none;
-    border-radius: 10px;
     background: #fce138;
     color: #024e76;
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
+    border-radius: 10px;
 }
 
 .contact-form button:hover {
     color: #fce138;
     background: #39a6b2;
-  }
+}
+/*end of Reach out styles*/
+
+/*Utilities*/
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
 
 .flex-row {
     display: flex;
 }
-/* REACH OUT STYLES END  my version*/
 
-/*aesthetics upgrade*/
-.some-class {
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.25);
-}
+/*Media Query for smaller desktop screens and smaller*/
 
 @media screen and (max-width: 980px) {
     header {
@@ -448,6 +466,7 @@ section {
     }
 }
 
+/*Media query for tables and smaller*/
 @media screen and (max-width: 768px) {
     section {
         padding: 30px 15px;
@@ -458,50 +477,57 @@ section {
         text-align: center;
     }
     
-      .step-info {
+    .step-info {
         flex: 2 100%;
         text-align: center;
         justify-content: center;
     }
     
-      .step-img {
+    .step-img {
         flex: 0 32%;
         margin-right: 0;
         margin-top: 15px;
         margin-bottom: 15px;
     }
     
-      .step-text {
+    .step-text {
         flex: 100%;  
+    }
+
+    .trainer-bio h3, .trainer-bio h4 {
+        display: block;
     }
 }
 
+/*Media query for mobile phones and smaller*/
 @media screen and (max-width: 575px) {
     .hero-form button {
         width: 100%;
-      }
+    }
     
-      .section-title {
+    .section-title {
         width: 95%;
-      }
+    }
     
-      .intro p {
+    .intro p {
         width: 100%;
-      }
+    }
     
-      .trainer {
+    .trainer {
         flex: 0 100%;
-      }
+    }
     
-      .contact-info {
+    .contact-info {
         text-align: center;
-      }
+    }
     
-      .contact-info > * {
+    .contact-info > * {
         flex: 0 100%;
-      }
+    }
 
-      .contact-form {
-          order: 3;
-      }
+    .contact-form {
+        order: 3;
+    }
 }
+
+/*end of styleog.css*/
